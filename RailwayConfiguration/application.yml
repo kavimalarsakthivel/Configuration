@@ -1,0 +1,40 @@
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+app:
+  jwt:
+    secret: DdiHsyqMYKKRwu03QDDTJHDV9eF4hPQQQr43TZvvcpM=
+    access-token-expiration-ms: 86400000
+    refresh-token-expiration-ms: 604800000
+
+spring:
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: soleya.noreply@gmail.com
+    password: kpen buef xfxm jmwq
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+  rabbitmq:
+    host: ${RABBITMQ_HOST:localhost}
+    port: ${RABBITMQ_PORT:5672}
+    username: ${RABBITMQ_USER:guest}
+    password: ${RABBITMQ_PASS:guest}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+  endpoint:
+    health:
+      show-details: always
