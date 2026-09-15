@@ -7,7 +7,7 @@ eureka:
 
 app:
   jwt:
-    secret: DdiHsyqMYKKRwu03QDDTJHDV9eF4hPQQQr43TZvvcpM=
+    secret: ApN9Fqws3AgyNtxMqrPMACosw7y1JTaduE+KVZ/tu8Y=
     access-token-expiration-ms: 86400000
     refresh-token-expiration-ms: 604800000
 
