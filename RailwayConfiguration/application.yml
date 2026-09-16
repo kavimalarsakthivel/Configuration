@@ -16,7 +16,7 @@ spring:
     host: smtp.gmail.com
     port: 587
     username: soleya.noreply@gmail.com
-    password: kpen buef xfxm jmwq
+    password: kpenbuefxfxmjmwq
     properties:
       mail:
         smtp:
